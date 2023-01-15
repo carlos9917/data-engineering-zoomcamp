@@ -1,10 +1,15 @@
 # Data Engineering Zoomcamp
 
+
+<p align="center">
+  <a href="https://airtable.com/shr6oVXeQvSI5HuWD"><img src="https://user-images.githubusercontent.com/875246/185755203-17945fd1-6b64-46f2-8377-1011dcb1a444.png" height="50" /></a>
+</p>
+
 - Register in [DataTalks.Club's Slack](https://datatalks.club/slack.html)
 - Join the [`#course-data-engineering`](https://app.slack.com/client/T01ATQK62F8/C01FABYF2RG) channel
-- The videos are published to [DataTalks.Club's YouTube channel](https://www.youtube.com/c/DataTalksClub) in [the course playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) 
-- [Frequenty asked technical questions](https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit?usp=sharing)
-
+- Join the [course Telegram channel with announcements](https://t.me/dezoomcamp)
+- The videos are published on [DataTalks.Club's YouTube channel](https://www.youtube.com/c/DataTalksClub) in [the course playlist](https://www.youtube.com/playlist?list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
+- [Frequently asked technical questions](https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit?usp=sharing)
 
 Syllabus
 
@@ -18,9 +23,15 @@ Syllabus
 
 ## Taking the course
 
+### 2023 Cohort
+
+* **Start**: 16 January 2023 (Monday) at 18:00 CET
+* **Registration link**: https://airtable.com/shr6oVXeQvSI5HuWD
+* Subscribe to our [public Google Calendar](https://calendar.google.com/calendar/?cid=ZXIxcjA1M3ZlYjJpcXU0dTFmaG02MzVxMG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (it works from Desktop only)
+
 ### Self-paced mode
 
-All the materials of the course are freely available, so you 
+All the materials of the course are freely available, so that you 
 can take the course at your own pace 
 
 * Follow the suggested syllabus (see below) week by week
@@ -28,13 +39,6 @@ can take the course at your own pace
 * Check [FAQ](https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit?usp=sharing) if you have problems
 * If you can't find a solution to your problem in FAQ, ask for help in Slack
 
-
-### 2022 Cohort
-
-* **Start**: 17 January 2022
-* **Registration link**: https://airtable.com/shr6oVXeQvSI5HuWD
-* [Leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vR9oQiYnAVvzL4dagnhvp0sngqagF0AceD0FGjhS-dnzMTBzNQIal3-hOgkTibVQvfuqbQ69b0fvRnf/pubhtml)
-* Subscribe to our [public Google Calendar](https://calendar.google.com/calendar/?cid=ZXIxcjA1M3ZlYjJpcXU0dTFmaG02MzVxMG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (it works from Desktop only)
 
 
 ### Asking for help in Slack
@@ -49,6 +53,8 @@ To make discussions in Slack more organized:
 
 ## Syllabus
 
+> **Note:** NYC TLC changed the format of the data we use to parquet. But you can still access 
+> the csv files [here](https://github.com/DataTalksClub/nyc-tlc-data).
 
 ### [Week 1: Introduction & Prerequisites](week_1_basics_n_setup)
 
@@ -63,17 +69,17 @@ To make discussions in Slack more organized:
 [More details](week_1_basics_n_setup)
 
 
-### [Week 2: Data ingestion](week_2_data_ingestion)
+### [Week 2: Workflow Orchestration](week_2_workflow_orchestration/)
 
 * Data Lake
 * Workflow orchestration
-* Setting up Airflow locally
-* Ingesting data to GCP with Airflow
-* Ingesting data to local Postgres with Airflow
-* Moving data from AWS to GCP (Transfer service)
+* Introduction to Prefect
+* ETL with GCP & Prefect
+* Parametrizing workflows
+* Prefect Cloud and additional resources 
 * Homework
 
-[More details](week_2_data_ingestion)
+[More details](week_2_workflow_orchestration/)
 
 
 ### [Week 3: Data Warehouse](week_3_data_warehouse)
@@ -81,7 +87,7 @@ To make discussions in Slack more organized:
 
 * Data Warehouse
 * BigQuery
-* Partitoning and clustering
+* Partitioning and clustering
 * BigQuery best practices
 * Internals of BigQuery
 * Integrating BigQuery with Airflow
@@ -99,7 +105,7 @@ To make discussions in Slack more organized:
 * dbt models
 * Testing and documenting
 * Deployment to the cloud and locally
-* Visualising the data with google data studio and metabase 
+* Visualizing the data with google data studio and metabase 
 
 
 [More details](week_4_analytics_engineering)
@@ -129,7 +135,7 @@ To make discussions in Slack more organized:
 
 Putting everything we learned to practice
 
-* Week 7 and 8: working on your own project
+* Week 7 and 8: working on your project
 * Week 9: reviewing your peers
 
 [More details](week_7_project)
@@ -155,7 +161,7 @@ Putting everything we learned to practice
 
 ### Prerequisites
 
-To get most out of this course, you should feel comfortable with coding and command line,
+To get the most out of this course, you should feel comfortable with coding and command line
 and know the basics of SQL. Prior experience with Python will be helpful, but you can pick 
 Python relatively fast if you have experience with other programming languages.
 
@@ -172,7 +178,7 @@ Prior experience with data engineering is not required.
 
 ## Tools 
 
-For this course you'll need to have the following software installed on your computer:
+For this course, you'll need to have the following software installed on your computer:
 
 * Docker and Docker-Compose
 * Python 3 (e.g. via [Anaconda](https://www.anaconda.com/products/individual))
@@ -201,11 +207,15 @@ See [Week 1](week_1_basics_n_setup) for more details about installing these tool
 
 
 
-## Our friends 
+## Supporters and partners
 
-Big thanks to other communities for helping us spread the word about the course: 
+Thanks to the course sponsors for making it possible to create this course
 
-* [DPhi](https://dphi.tech/)
-* [MLOps.community](https://mlops.community/)
+<p align="center">
+  <a href="https://www.prefect.io/">
+    <img height="100" src="https://github.com/DataTalksClub/mlops-zoomcamp/raw/main/images/prefect.png">
+  </a>
+</p>
 
-Check them out - they are cool!
+Do you want to support our course and our community? Please reach out to [alexey@datatalks.club](alexey@datatalks.club)
+
